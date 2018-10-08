@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>МТС - Тестовое задание</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<p>Результат выводится в консоли.</p>
+<button id="btn">Поехали</button>
+
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+        var btn = document.getElementById( 'btn' );
+        btn.addEventListener( 'click', function () {
+            transform.start( 'http://213.108.129.190/xml/get-temp-data' );
+        } );
+    } );
+</script>
+</body>
+</html>
